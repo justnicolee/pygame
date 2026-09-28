@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mini Calculator</title>
+</head>
+<body>
+    <form method="POST">
+        <label id="num1">First number: </label>
+        <input name="num1" for="num1" type="text"><br>
+        <br>
+        <label id="num2">Second number: </label>
+        <input name="num2" for="num2" type="text">
+        <br><br>
+        <select name="operation">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+        </select><br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+    {% if result != "None" %}
+        <h2>Result: {{ result }}</h2>
+    {% endif %}
+</body>
+</html>
